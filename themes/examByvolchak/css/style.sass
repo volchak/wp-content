@@ -1,0 +1,381 @@
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+  text-decoration: none
+input:focus,
+a:focus,
+button:focus
+  outline: none
+a:hover
+  text-decoration: none
+
+@font-face
+  font-family: 'CenturyGothic'
+  src: url('../fonts/CenturyGothic%20(1)/CenturyGothic.eot?#iefix') format('embedded-opentype'),  url('../fonts/CenturyGothic%20(1)/CenturyGothic.woff') format('woff'), url('../fonts/CenturyGothic%20(1)/CenturyGothic.ttf')  format('truetype'), url('../fonts/CenturyGothic%20(1)/CenturyGothic.svg#CenturyGothic') format('svg')
+  font-weight: normal
+  font-style: normal
+@font-face
+  font-family: 'code_lightregular'
+  src: url('../fonts/CODE/code_light-webfont.eot')
+  src: url('../fonts/CODE/code_light-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/CODE/code_light-webfont.woff2') format('woff2'),url('../fonts/CODE/code_light-webfont.woff') format('woff'),url('../fonts/CODE/code_light-webfont.ttf') format('truetype'),url('../fonts/CODE/code_light-webfont.svg#code_lightregular') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@mixin code_lightregular
+  font: 24px 'code_lightregular', sans-serif
+@mixin CenturyGothic
+  font: 16px 'CenturyGothic', sans-serif
+
+@mixin rounded-corners ($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+/*-----------------header---------------------*/
+
+.header
+  text-align: center
+  background: #f6f6f6
+  padding: 0 0 80px 0
+  .wrap-header
+    display: inline-block
+    width: 1400px
+.logo-company
+  float: left
+  margin: 22px 0
+.navigation
+  float: right
+  margin: 45px 0
+  ul
+    overflow: hidden
+    li
+      float: left
+      margin: 0 0 0 60px
+      padding: 25px 10px
+      &:first-child
+        margin: 0
+      a
+        color: rgba(0,0,0,0.7)
+        @include code_lightregular
+        font-size: 16px
+        &:hover
+          color: rgba(0,0,0,1)
+.active
+  background: #ffea00
+.bottom-header
+  background: url("../img/bg-bottom-header.jpg") no-repeat
+  background-size: cover
+  .wrap-bootom-header
+    display: inline-block
+    width: 1400px
+    padding: 50px 0
+    .word-blog
+      float: left
+      padding: 10px 200px 10px 10px
+      text-transform: uppercase
+      color: #ffea00
+      background-color: #424146
+      @include CenturyGothic
+      font-size: 35px
+
+/*-----------------main---------------------*/
+
+.main
+  text-align: center
+  background: #f6f6f6
+  .wrap-main
+    display: inline-block
+    width: 1630px
+.contant
+  float: left
+  width: 1130px
+  @include CenturyGothic
+.first-colunms
+  float: left
+  width: 550px
+  .wooden-quote
+    margin-bottom: 30px
+    padding: 0 50px
+    text-align: left
+    font-size: 11px
+    font-style: italic
+    background: #ffea00
+    q
+      font-size: 21px
+.article
+  width: 548px
+  margin-bottom: 30px
+  padding: 425px 24px 25px 24px
+  text-align: left
+  h1
+    text-transform: uppercase
+    font-size: 23px
+    margin: 0 0 20px 0
+  p
+    font-size: 14px
+    margin: 0 0 20px 0
+.like-link
+  padding-left: 15px
+  background: url("../img/like-links.png") no-repeat 0 6px
+.article-links
+  float: right
+.article a
+  color: rgba(0,0,0,1)
+  &:hover
+    color: rgba(0,0,0,0.5)
+.parallax-news
+  background: url("../img/img-1.jpg") no-repeat #ffea00
+.resources-news
+  background: url("../img/img2.jpg") no-repeat #ffea00
+.minimalistic-news
+  background: url("../img/img3.jpg") no-repeat #ffea00
+
+.second-columns
+  float: left
+  width: 550px
+  margin-left: 30px
+  .multipurpose-news
+    background: url("../img/img4.jpg") no-repeat #ffea00
+  .inspiring-examples-news
+    background: url("../img/img5.jpg") no-repeat #ffea00
+  .fresh-examples-news
+    background: url("../img/img6.jpg") no-repeat #ffea00
+  .beautiful-typography-news
+    background: url("../img/img7.jpg") no-repeat #ffea00
+
+/*-----------------sidebar---------------------*/
+
+.sidebar
+  float: right
+  width: 475px
+  text-align: center
+  form
+    background: #424147
+    margin-bottom: 30px
+    padding: 20px 0
+    .search
+      display: inline-block
+      width: 360px
+      height: 30px
+      margin: 0 auto
+      padding-left: 20px
+      border: none
+      background: url("../img/serch-icon.png") no-repeat 300px 3px #fff
+      @include rounded-corners(15px)
+      @include CenturyGothic
+      font-size: 18px
+      ::-webkit-input-placeholder
+        opacity: 1
+        transition: opacity 0.3s ease
+      ::-moz-placeholder
+        opacity: 1
+        transition: opacity 0.3s ease
+      :-moz-placeholder
+        opacity: 1
+        transition: opacity 0.3s ease
+      :-ms-input-placeholder
+        opacity: 1
+        transition: opacity 0.3s ease
+      &:focus::-webkit-input-placeholder
+        opacity: 0
+        transition: opacity 0.3s ease
+      &:focus::-moz-placeholder
+        opacity: 0
+        transition: opacity 0.3s ease
+      &:focus:-moz-placeholder
+        opacity: 0
+        transition: opacity 0.3s ease
+      &:focus:-ms-input-placeholder
+        opacity: 0
+        transition: opacity 0.3s ease
+.categories
+
+.grey-block
+  overflow: hidden
+  text-align: left
+  margin-bottom: 30px
+  padding: 30px
+  background: #424147
+  @include CenturyGothic
+  h2
+    margin: 0 0 25px 0
+    text-transform: uppercase
+    font-size: 20px
+    color: #ffea00
+  ul
+    li
+      padding: 7px 0
+      margin-bottom: 15px
+      a
+        font-size: 16px
+        padding: 8px 0 8px 40px
+        color: rgba(255, 255, 255,1)
+        background: url("../img/arrow.jpg") no-repeat 1px 1px
+        &:hover
+          color: rgba(255, 255, 255,0.5)
+.left-list
+  width: 200px
+  float: left
+.right-list
+  float: right
+  width: 200px
+
+.fresh-links
+  padding-left: 110px
+  color: rgba(255,255,255,1)
+  &:hover
+    color: rgba(255,255,255,0.5)
+  h3
+    margin: 0
+    padding: 0 0 40px 115px
+    font-size: 16px
+    text-transform: uppercase
+    background: url("../img/popular-img1.jpg") no-repeat 1px 5px
+.article-links
+  float: right
+  .article-comments
+    color: rgba(255,234,0,1)
+    &:hover
+      color: rgba(255,234,0,0.5)
+      background: none
+  .article-date
+    color: rgba(255,234,0,1)
+
+/*---------------about-and-contact-----------------*/
+
+.about-and-contact
+  text-align: center
+  background: #414146
+.wrap-about-and-contact
+  display: inline-block
+  width: 1394px
+  padding-bottom: 25px
+
+.about-us
+  float: left
+  text-align: left
+  width: 430px
+  color: #ffffff
+  h3
+    margin: 30px 0
+    font-size: 18px
+  p
+    margin: 0
+    font-size: 13px
+  .btn-learn-more
+    display: inline-block
+    margin: 30px 0 0
+    padding: 7px 20px
+    font-size: 15px
+    color: #ffffff
+    background: #000000
+  .photo-stream-list
+    li
+      float: left
+      margin: 5px 0 0 5px
+.lotest-tweets
+  float: left
+  width: 460px
+  margin-left: 80px
+  text-align: left
+  color: #ffffff
+  h3
+    margin: 30px 0 15px
+    font-size: 18px
+  .lotest-tweets-list
+    li
+      p
+        margin: 0
+        font-size: 13px
+        padding-left: 45px
+        background: url("../img/tweeter-icon.png") no-repeat 0 1px
+      .days-ago
+        padding-left: 45px
+        color: #ffea00
+        font-size: 8px
+.contact-info
+  float: left
+  width: 320px
+  margin-left: 80px
+  text-align: left
+  color: #ffffff
+  h3
+    margin: 30px 0
+    font-size: 18px
+address
+  .address
+    display: block
+    margin-top: 15px
+    padding: 5px 0 0 45px
+    font-size: 13px
+    background: url("../img/geographical-point.jpg") no-repeat
+  .phone
+    display: block
+    margin-top: 15px
+    padding: 5px 0 0 45px
+    font-size: 13px
+    background: url("../img/skype-icon.jpg") no-repeat
+    .add-number
+      display: block
+      margin-left: 46px
+  .email
+    display: block
+    margin-top: 15px
+    padding: 5px 0 15px 45px
+    font-size: 13px
+    background: url("../img/email-icon.jpg") no-repeat
+    a
+      color: #ffea00
+form
+  legend
+    margin: 30px 0
+    font-size: 18px
+    color: #ffffff
+    border: none
+  label
+    margin: 0
+    font-size: 13px
+.send-letter
+  .email-field
+    float: left
+    width: 230px
+    border: none
+    border-bottom: 1px solid #ffea00
+    background: #414146
+  .btn-email
+    float: left
+    width: 28px
+    height: 28px
+    border: none
+    background: url("../img/button-email.jpg") no-repeat
+
+.footer
+  text-align: center
+  background: #000000
+.wrap-footer
+  display: inline-block
+  width: 1394px
+  color: #ffffff
+.copyright
+  float: left
+  margin: 25px 0
+  font-size: 14px
+.navigation-footer
+  float: right
+  ul
+    overflow: hidden
+    li
+      float: left
+      margin: 0 0 0 60px
+      padding: 15px 10px
+      &:first-child
+        margin: 0
+      a
+        color: rgba(255,255,255,0.7)
+        @include code_lightregular
+        &:hover
+          color: rgba(255,255,255,1)
+
+

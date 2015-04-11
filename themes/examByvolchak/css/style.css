@@ -1,0 +1,385 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+input:focus,
+a:focus,
+button:focus {
+  outline: none; }
+
+a:hover {
+  text-decoration: none; }
+
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("../fonts/CenturyGothic%20(1)/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic%20(1)/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic%20(1)/CenturyGothic.ttf") format("truetype"), url("../fonts/CenturyGothic%20(1)/CenturyGothic.svg#CenturyGothic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "code_lightregular";
+  src: url("../fonts/CODE/code_light-webfont.eot");
+  src: url("../fonts/CODE/code_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/CODE/code_light-webfont.woff2") format("woff2"), url("../fonts/CODE/code_light-webfont.woff") format("woff"), url("../fonts/CODE/code_light-webfont.ttf") format("truetype"), url("../fonts/CODE/code_light-webfont.svg#code_lightregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*-----------------header--------------------- */
+.header {
+  text-align: center;
+  background: #f6f6f6;
+  padding: 0 0 80px 0; }
+  .header .wrap-header {
+    display: inline-block;
+    width: 1400px; }
+
+.logo-company {
+  float: left;
+  margin: 22px 0; }
+
+.navigation {
+  float: right;
+  margin: 45px 0; }
+  .navigation ul {
+    overflow: hidden; }
+    .navigation ul li {
+      float: left;
+      margin: 0 0 0 60px;
+      padding: 25px 10px; }
+      .navigation ul li:first-child {
+        margin: 0; }
+      .navigation ul li a {
+        color: rgba(0, 0, 0, 0.7);
+        font: 24px "code_lightregular", sans-serif;
+        font-size: 16px; }
+        .navigation ul li a:hover {
+          color: black; }
+
+.active {
+  background: #ffea00; }
+
+.bottom-header {
+  background: url("../img/bg-bottom-header.jpg") no-repeat;
+  background-size: cover; }
+  .bottom-header .wrap-bootom-header {
+    display: inline-block;
+    width: 1400px;
+    padding: 50px 0; }
+    .bottom-header .wrap-bootom-header .word-blog {
+      float: left;
+      padding: 10px 200px 10px 10px;
+      text-transform: uppercase;
+      color: #ffea00;
+      background-color: #424146;
+      font: 16px "CenturyGothic", sans-serif;
+      font-size: 35px; }
+
+/*-----------------main--------------------- */
+.main {
+  text-align: center;
+  background: #f6f6f6; }
+  .main .wrap-main {
+    display: inline-block;
+    width: 1630px; }
+
+.contant {
+  float: left;
+  width: 1130px;
+  font: 16px "CenturyGothic", sans-serif; }
+
+.first-colunms {
+  float: left;
+  width: 550px; }
+  .first-colunms .wooden-quote {
+    margin-bottom: 30px;
+    padding: 0 50px;
+    text-align: left;
+    font-size: 11px;
+    font-style: italic;
+    background: #ffea00; }
+    .first-colunms .wooden-quote q {
+      font-size: 21px; }
+
+.article {
+  width: 548px;
+  margin-bottom: 30px;
+  padding: 425px 24px 25px 24px;
+  text-align: left; }
+  .article h1 {
+    text-transform: uppercase;
+    font-size: 23px;
+    margin: 0 0 20px 0; }
+  .article p {
+    font-size: 14px;
+    margin: 0 0 20px 0; }
+
+.like-link {
+  padding-left: 15px;
+  background: url("../img/like-links.png") no-repeat 0 6px; }
+
+.article-links {
+  float: right; }
+
+.article a {
+  color: black; }
+  .article a:hover {
+    color: rgba(0, 0, 0, 0.5); }
+
+.parallax-news {
+  background: url("../img/img-1.jpg") no-repeat #ffea00; }
+
+.resources-news {
+  background: url("../img/img2.jpg") no-repeat #ffea00; }
+
+.minimalistic-news {
+  background: url("../img/img3.jpg") no-repeat #ffea00; }
+
+.second-columns {
+  float: left;
+  width: 550px;
+  margin-left: 30px; }
+  .second-columns .multipurpose-news {
+    background: url("../img/img4.jpg") no-repeat #ffea00; }
+  .second-columns .inspiring-examples-news {
+    background: url("../img/img5.jpg") no-repeat #ffea00; }
+  .second-columns .fresh-examples-news {
+    background: url("../img/img6.jpg") no-repeat #ffea00; }
+  .second-columns .beautiful-typography-news {
+    background: url("../img/img7.jpg") no-repeat #ffea00; }
+
+/*-----------------sidebar--------------------- */
+.sidebar {
+  float: right;
+  width: 475px;
+  text-align: center; }
+  .sidebar form {
+    background: #424147;
+    margin-bottom: 30px;
+    padding: 20px 0; }
+    .sidebar form .search {
+      display: inline-block;
+      width: 360px;
+      height: 30px;
+      margin: 0 auto;
+      padding-left: 20px;
+      border: none;
+      background: url("../img/serch-icon.png") no-repeat 300px 3px #fff;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      border-radius: 15px;
+      font: 16px "CenturyGothic", sans-serif;
+      font-size: 18px;
+      -moz-placeholder-opacity: 1;
+      -moz-placeholder-transition: opacity 0.3s ease;
+      -ms-input-placeholder-opacity: 1;
+      -ms-input-placeholder-transition: opacity 0.3s ease; }
+      .sidebar form .search ::-webkit-input-placeholder {
+        opacity: 1;
+        transition: opacity 0.3s ease; }
+      .sidebar form .search ::-moz-placeholder {
+        opacity: 1;
+        transition: opacity 0.3s ease; }
+      .sidebar form .search:focus::-webkit-input-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease; }
+      .sidebar form .search:focus::-moz-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease; }
+      .sidebar form .search:focus:-moz-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease; }
+      .sidebar form .search:focus:-ms-input-placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease; }
+
+.grey-block {
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 30px;
+  padding: 30px;
+  background: #424147;
+  font: 16px "CenturyGothic", sans-serif; }
+  .grey-block h2 {
+    margin: 0 0 25px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffea00; }
+  .grey-block ul li {
+    padding: 7px 0;
+    margin-bottom: 15px; }
+    .grey-block ul li a {
+      font-size: 16px;
+      padding: 8px 0 8px 40px;
+      color: white;
+      background: url("../img/arrow.jpg") no-repeat 1px 1px; }
+      .grey-block ul li a:hover {
+        color: rgba(255, 255, 255, 0.5); }
+
+.left-list {
+  width: 200px;
+  float: left; }
+
+.right-list {
+  float: right;
+  width: 200px; }
+
+.fresh-links {
+  padding-left: 110px;
+  color: white; }
+  .fresh-links:hover {
+    color: rgba(255, 255, 255, 0.5); }
+  .fresh-links h3 {
+    margin: 0;
+    padding: 0 0 40px 115px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: url("../img/popular-img1.jpg") no-repeat 1px 5px; }
+
+.article-links {
+  float: right; }
+  .article-links .article-comments {
+    color: #ffea00; }
+    .article-links .article-comments:hover {
+      color: rgba(255, 234, 0, 0.5);
+      background: none; }
+  .article-links .article-date {
+    color: #ffea00; }
+
+/*---------------about-and-contact----------------- */
+.about-and-contact {
+  text-align: center;
+  background: #414146; }
+
+.wrap-about-and-contact {
+  display: inline-block;
+  width: 1394px;
+  padding-bottom: 25px; }
+
+.about-us {
+  float: left;
+  text-align: left;
+  width: 430px;
+  color: #ffffff; }
+  .about-us h3 {
+    margin: 30px 0;
+    font-size: 18px; }
+  .about-us p {
+    margin: 0;
+    font-size: 13px; }
+  .about-us .btn-learn-more {
+    display: inline-block;
+    margin: 30px 0 0;
+    padding: 7px 20px;
+    font-size: 15px;
+    color: #ffffff;
+    background: #000000; }
+  .about-us .photo-stream-list li {
+    float: left;
+    margin: 5px 0 0 5px; }
+
+.lotest-tweets {
+  float: left;
+  width: 460px;
+  margin-left: 80px;
+  text-align: left;
+  color: #ffffff; }
+  .lotest-tweets h3 {
+    margin: 30px 0 15px;
+    font-size: 18px; }
+  .lotest-tweets .lotest-tweets-list li p {
+    margin: 0;
+    font-size: 13px;
+    padding-left: 45px;
+    background: url("../img/tweeter-icon.png") no-repeat 0 1px; }
+  .lotest-tweets .lotest-tweets-list li .days-ago {
+    padding-left: 45px;
+    color: #ffea00;
+    font-size: 8px; }
+
+.contact-info {
+  float: left;
+  width: 320px;
+  margin-left: 80px;
+  text-align: left;
+  color: #ffffff; }
+  .contact-info h3 {
+    margin: 30px 0;
+    font-size: 18px; }
+
+address .address {
+  display: block;
+  margin-top: 15px;
+  padding: 5px 0 0 45px;
+  font-size: 13px;
+  background: url("../img/geographical-point.jpg") no-repeat; }
+address .phone {
+  display: block;
+  margin-top: 15px;
+  padding: 5px 0 0 45px;
+  font-size: 13px;
+  background: url("../img/skype-icon.jpg") no-repeat; }
+  address .phone .add-number {
+    display: block;
+    margin-left: 46px; }
+address .email {
+  display: block;
+  margin-top: 15px;
+  padding: 5px 0 15px 45px;
+  font-size: 13px;
+  background: url("../img/email-icon.jpg") no-repeat; }
+  address .email a {
+    color: #ffea00; }
+
+form legend {
+  margin: 30px 0;
+  font-size: 18px;
+  color: #ffffff;
+  border: none; }
+form label {
+  margin: 0;
+  font-size: 13px; }
+
+.send-letter .email-field {
+  float: left;
+  width: 230px;
+  border: none;
+  border-bottom: 1px solid #ffea00;
+  background: #414146; }
+.send-letter .btn-email {
+  float: left;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: url("../img/button-email.jpg") no-repeat; }
+
+.footer {
+  text-align: center;
+  background: #000000; }
+
+.wrap-footer {
+  display: inline-block;
+  width: 1394px;
+  color: #ffffff; }
+
+.copyright {
+  float: left;
+  margin: 25px 0;
+  font-size: 14px; }
+
+.navigation-footer {
+  float: right; }
+  .navigation-footer ul {
+    overflow: hidden; }
+    .navigation-footer ul li {
+      float: left;
+      margin: 0 0 0 60px;
+      padding: 15px 10px; }
+      .navigation-footer ul li:first-child {
+        margin: 0; }
+      .navigation-footer ul li a {
+        color: rgba(255, 255, 255, 0.7);
+        font: 24px "code_lightregular", sans-serif; }
+        .navigation-footer ul li a:hover {
+          color: white; }
+
+/*# sourceMappingURL=style.css.map */
