@@ -10,6 +10,7 @@
                 </p>
                 <a class="btn-learn-more" href="#">Learn More</a>
                 <h3>Photo Stream</h3>
+
                 <ul class="photo-stream-list">
                     <li><img src="img/photo1.jpg" width="130" height="70" alt="photo 1"></li>
                     <li><img src="img/photo2.jpg" width="130" height="70" alt="photo 2"></li>
